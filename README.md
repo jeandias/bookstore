@@ -12,11 +12,11 @@ $ cd bookstore
 ```sh
 $ docker build .
 $ docker-compose build
+$ docker-compose up -d
 $ docker-compose run web sh -c "python manage.py migrate"
 $ docker-compose run web sh -c "python manage.py createsuperuser --email admin@example.com --username admin"
 ```
 ## Testing our API
 ```sh
-$ docker-compose up -d
 $ http://127.0.0.1:8000
 ```
